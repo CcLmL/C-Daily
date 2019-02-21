@@ -1,0 +1,10 @@
+C#源码通过LC转为IL代码，IL主要包含一些元数据和中间语言指令。
+http://www.cnblogs.com/yinrq/p/5486103.html
+
+C#源代码（source code）通过Language Compiler转为IL代码，IL主要包含一些元数据和中间语言指令。
+JIT编译器把IL代码转为机器识别的机器代码。
+
+如果想学号.NET，IL是必须的基础，IL代码是.NET运行的基础，当我们队运行的结果有异议的时候，可以通过IL代码透过表面看本质。
+
+想要看IL代码需要使用ILDasm工具，工具一般在电脑的 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\ildasm.exe
+通过VS中工具的外部工具栏中导入进去。
