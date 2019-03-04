@@ -1,0 +1,9 @@
+.NET Framework
+
+是管理面向.NET Framework的应用程序的运行时执行环境.它包括提供内存管理和其他系统服务的公共语言运行时
+以及一套使程序员可以在应用程序开发的所有主要领域利用这些健壮和可靠的代码的全面的类库.
+
+.NET Compact Framework
+
+一种独立于硬件的环境，用于在资源受限制的计算设备上运行程序。它继承了公共语言运行时的完整 .NET Framework 结构，支持 .NET Framework 类库的子集，并且包含专为 .NET Compact Framework 设计的类。所支持的设备包括：个人数据助理 (PDA)（如 Pocket PC），移动电话，机顶盒，汽车计算设备，以及安装有 Microsoft Windows CE .NET 操作系统的自定义设计的嵌入设备。
+从严格意义上讲.Net Compact Framework并不是.NET Framework的子集，.Net Compact Framework也有.NET Framework不包含的内容，比如移动设备独有的项目，如蓝牙等
