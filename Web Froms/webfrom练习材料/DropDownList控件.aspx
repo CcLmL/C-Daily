@@ -27,8 +27,13 @@
 
     End Sub
 
-    Sub DayChg(Sender As Object, e As EventArgs)
-
+    Sub DayChg(Sender As Object, e As EventArgs) '下例判断如果使用者选择日期不是今天之后，则将日期回指定到今天
+        If DateSerial(D1.SelectedItem.Text, D2.SelectedItem.Text, D3.SelectedItem.Text) < Now Then
+            D1.Items(0).Selected = True
+            D2.Items(Month(Now()) - 1).Selected = True
+            D3.Items(Day(Now()) - 1).Selected = True
+            Return
+        End If
     End Sub
 
 </script>
