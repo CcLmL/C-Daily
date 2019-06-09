@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMapNodes url="" title="办公自动化管理系统"  description="办公自动化管理系统">
+  <siteMapNode url="" title="个人办公室"  description="">
+    <siteMapNode url="" title="密码管理"  description="" >
+      <siteMapNode url="PersonalArea/ChangePassPage.aspx" title="修改密码"  description="" />
+      <siteMapNode url="PassRecoveryPage.aspx" title="找回密码"  description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="短信管理"  description="">
+      <siteMapNode url="PersonalArea/MsgSendPage.aspx" title="发送短信"  description="" />
+      <siteMapNode url="PersonalArea/MsgRecPage.aspx" title="接收短信"  description="" />
+      <siteMapNode url="PersonalArea/SendMsgHistory.aspx" title="发送历史记录"  description="" />
+      <siteMapNode url="PersonalArea/RecMsgHistory.aspx" title="接收历史记录"  description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="邮箱管理"  description="" >
+      <siteMapNode url="PersonalArea/SmtpSet.aspx" title="邮箱SMTP设置"  description="" />
+      <siteMapNode url="PersonalArea/SendMail.aspx" title="发送邮件"  description="" />
+      <siteMapNode url="PersonalArea/ReadMail.aspx" title="接收邮件列表"  description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="日程安排"  description="" >
+      <siteMapNode url="PersonalArea/CanlendarSet.aspx" title="新日程"  description="" />
+      <siteMapNode url="PersonalArea/ViewTodayTask.aspx" title="今天的日程"  description="" />
+    </siteMapNode>
+    <siteMapNode url="PersonalArea/ProfileSet.aspx" title="个性化设置"  description="" />
+  </siteMapNode>
+  <siteMapNode url="" title="管理者特区"  description="">
+    <siteMapNode url="" title="权限管理"  description="" >
+      <siteMapNode url="ManagerArea/RolePage.aspx?activeindex=0" title="角色管理"  description="" />
+      <siteMapNode url="ManagerArea/RolePage.aspx?activeindex=1" title="用户管理"  description="" />
+      <siteMapNode url="ManagerArea/RolePage.aspx?activeindex=2" title="用户角色管理"  description="" />
+    </siteMapNode>
+    <siteMapNode url="ManagerArea/TimeSetPage.aspx" title="考勤设置"  description="" />
+    <siteMapNode url="ManagerArea/DepartPage.aspx" title="部门设置"  description="" />
+    <siteMapNode url="ManagerArea/AffichePage.aspx" title="发布公告"  description="" />
+  </siteMapNode>
+  <siteMapNode url="" title="信息共享区"  description="">
+    <siteMapNode url="" title="文件资源"  description="" >
+      <siteMapNode url="ShareArea/FileUpload.aspx" title="上传文件"  description="" />
+      <siteMapNode url="ShareArea/FileDownload.aspx" title="下载文件"  description="" />
+      <siteMapNode url="ShareArea/FileSeek.aspx" title="文件查询"  description="" />
+    </siteMapNode>
+    <siteMapNode url="ShareArea/ViewOnline.aspx" title="在线人员管理"  description="" />
+    <siteMapNode url="ShareArea/ViewAffiche.aspx" title="浏览公告"  description="" />
+    <siteMapNode url="" title="信息服务"  description="" >
+      <siteMapNode url="ShareArea/Weather.aspx" title="天气预报"  description="" />
+      <siteMapNode url="ShareArea/Train.aspx" title="列车时刻表"  description="" />
+    </siteMapNode>
+  </siteMapNode>
+  <siteMapNode url="" title="人力资源管理"  description="">
+    <siteMapNode url="" title="工资管理"  description="">
+      <siteMapNode url="PeopleArea/SalarySet.aspx" title="设置工资计算公式"  description="" />
+      <siteMapNode url="PeopleArea/PubSalary.aspx" title="发放工资"  description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="培训管理"  description="" >
+      <siteMapNode url="PeopleArea/Train.aspx" title="培训登记"  description="" />
+      <siteMapNode url="PeopleArea/ViewTrain.aspx" title="浏览培训记录"  description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="招聘管理"  description="" >
+      <siteMapNode url="PeopleArea/ApplyJob.aspx" title="空缺申报"  description="" />
+      <siteMapNode url="PeopleArea/SettleApply.aspx" title="申报处理"  description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="绩效管理"  description="" >
+      <siteMapNode url="PeopleArea/Check.aspx" title="考核员工"  description="" />
+      <siteMapNode url="PeopleArea/ViewCheck.aspx" title="考核的维护"  description="" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMapNodes>

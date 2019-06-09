@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>无标题页</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table style="width: 805px; height: 430px">
+    <tr>
+    <td style="WIDTH: 106px">
+        LOGO标志区</td>
+        <td >
+            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <asp:LinkButton ID="LinkButton1" runat="server" Width="48px" OnClick="LinkButton1_Click">搜索</asp:LinkButton></td>
+        <td >
+            <a  href="../Cart/ShoppingCart.aspx">下订单</a>
+            <a  href="../UserProfile.aspx">Profile</a></td>
+        <td >
+            <asp:LoginName ID="LoginName1" runat="server" />
+            <asp:LoginStatus ID="LoginStatus1" runat="server" />
+            &nbsp;
+        </td>
+    </tr>
+    <tr>
+    <td  rowspan="2" style="width: 106px">
+        <asp:Repeater ID="Repeater1" runat="server">
+                <HeaderTemplate>
+                <table cellspacing="0" border="0" style="border-collapse: collapse;">
+                </HeaderTemplate>
+                <ItemTemplate>
+                <tr>
+                <td ><asp:HyperLink runat="server" ID="lnkCategory"  NavigateUrl='<%# string.Format("~/Product/ProductsPage.aspx?page=0&categoryId={0}", Eval("Id")) %>' Text='<%# Eval("Name") %>' /><asp:HiddenField runat="server" ID="hidCategoryId" Value='<%# Eval("Id") %>' /></td>
+                </tr>
+                </ItemTemplate>
+                <FooterTemplate>
+                </table>
+                </FooterTemplate>
+        </asp:Repeater>
+    </td>
+        <td colspan="3">
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+            内容区</asp:contentplaceholder>
+        </td>
+    </tr>
+        <tr>
+            <td colspan="3">
+                北京海淀图书管理处 电话：０１０-８４６７２２２２</td>
+        </tr>
+    </table>
+    <div>
+        &nbsp;</div>
+    </form>
+</body>
+</html>

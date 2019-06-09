@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+	<siteMapNode url="SitemapDataSourceCtl.aspx" title="SitemapDataSourceCtl.aspx页面" description="页面">
+		<siteMapNode url="files/User.xml" title="User.xml文件" description="文件" />
+		<siteMapNode url="database/Northwind.mdb" title="Northwind数据库" description="数据库" />
+		<siteMapNode url="App_Code/User.cs" title="User.cs文件" description="类文件" />
+	</siteMapNode>
+</siteMap>

@@ -1,0 +1,70 @@
+﻿using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+using System.Data.SqlClient;
+
+public partial class Get : System.Web.UI.Page
+{
+    DBClass dbObj = new DBClass();
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        string amount = Request.Form["amount"].ToString();
+        string comment = Request.Form["comment"].ToString();
+        string curType = Request.Form["curType"].ToString();
+        string JoinFlag = Request.Form["JoinFlag"].ToString();
+        string merAcct = Request.Form["merAcct"].ToString();
+        string merID = Request.Form["merID"].ToString();
+        string notifyDate = Request.Form["notifyDate"].ToString();
+        string orderDate = Request.Form["orderDate"].ToString();
+        string orderid = Request.Form["orderid"].ToString();
+        string remark1 = Request.Form["remark1"].ToString();
+        string remark2 = Request.Form["remark2"].ToString();
+        string resultType = Request.Form["resultType"].ToString();
+        string TranSerialNo = Request.Form["TranSerialNo"].ToString();
+        string tranStat = Request.Form["tranStat"].ToString();
+        string UserNum = Request.Form["UserNum"].ToString();
+        string verifyJoinFlag = Request.Form["verifyJoinFlag"].ToString();
+        string interfaceName = Request.Form["interfaceName"].ToString();
+        string interfaceVersion = Request.Form["interfaceVersion"].ToString();
+        string signMsg = Request.Form["signMsg"].ToString();
+        string path1 = @"E:\bank\public.crt";
+        string path2 = @"E:\bank\user.crt";
+        string path3 = @"E:\bank\user.key"; 
+        string key = "111111";
+        //下面是银行返回明文的格式
+        string str = "interfaceName="+interfaceName+"&interfaceVersion="+interfaceVersion+"&orderid="+orderid+"&TranSerialNo="+TranSerialNo+"&amount="+amount+"&curType="+curType+"&merID="+merID+"&merAcct="+merAcct+"&verifyJoinFlag="+verifyJoinFlag+"&JoinFlag="+JoinFlag+"&UserNum="+UserNum+"&resultType="+resultType+"&orderDate="+orderDate+"&notifyDate="+notifyDate+"&tranStat="+tranStat+"&comment="+comment+"&remark1="+remark1+"&remark2="+remark2;
+        if (tranStat == "1") //判断银行处理订单的返回类型，1为支付成功
+          {
+               ICBCEBANKUTILLib.B2CUtil obj = new ICBCEBANKUTILLib.B2CUtilClass();
+               obj.init(path1,path2,path3,key); //初始化组件
+
+               if ( obj.verifySignC(str,str.Length,signMsg,signMsg.Length) == 0) //判断验证银行签名是否成功
+               {
+                    //这里操作数据库
+                   //修改订单表中订单的确认状态
+                   string strSql = "update tb_OrderInfo ";
+                   strSql += "  set IsConfirm=1";
+                   strSql += "where OrderID=" + Convert.ToInt32(Request.Form["orderid"].ToString());
+                   SqlCommand myCmd = dbObj.GetCommandStr(strSql);
+                   dbObj.ExecNonQuery(myCmd);
+                   //Response.Write(这里输出支付成功后网站自己的返回地址);
+                   //Response.Write(ccObj.MessageBox("订单已确认！", "main.aspx"));
+                    
+               }  
+          }
+          else
+          {
+           //这里操作数据库
+          }
+
+
+
+    }
+}

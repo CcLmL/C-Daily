@@ -1,0 +1,356 @@
+BODY
+{
+	font-size: 11px;
+	font-family: Verdana, Arial;
+	background-color: White
+}
+TD
+{
+	font-size: 11px;
+	font-family: Verdana, Arial;
+}
+.Head, H1
+{
+	font: 16pt Verdana;
+	font-weight: normal;
+	color: #666644;
+}
+BLOCKQUOTE, PRE
+{
+	font-family: Lucida Console, monospace;
+	background-color: #eeeeee;
+	color: black;
+	font-size: 11px;
+}
+UL, OL
+{
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 14px;
+}
+UL LI
+{
+	list-style-type: square;
+}
+UL LI LI
+{
+	list-style-type: disc;
+}
+UL LI LI LI
+{
+	list-style-type: circle;
+}
+OL LI
+{
+	list-style-type: decimal;
+}
+OL OL LI
+{
+	list-style-type: lower-alpha;
+}
+OL OL OL LI
+{
+	list-style-type: lower-roman;
+}
+HR
+{
+	color: dimgrey;
+	height: 1pt;
+	text-align: left;
+}
+BODY.Report
+{
+	font-size: 11px;
+	font-family: Verdana, Arial;
+	background-color: white;
+}
+.ItemStyle
+{
+	font-size: 10px;
+	font-family: Verdana, Arial;
+}
+.ItemStyleRight
+{
+	font-size: 10px;
+	font-family: Verdana, Arial;
+	text-align: right;
+}
+.ItemStyleRightBold
+{
+	font-size: 10px;
+	font-family: Verdana, Arial;
+	font-weight: bold;
+	text-align: right;
+}
+.Header
+{
+	font-size: 11px;
+	font-family: Verdana, Arial;
+	font-weight: bold;
+}
+.HeaderStyle
+{
+	font-size: 11px;
+	font-family: Verdana, Arial;
+	font-weight: bold;
+	border-bottom: thin solid black;
+}
+.HeaderStyleRight
+{
+	font-size: 11px;
+	font-family: Verdana, Arial;
+	font-weight: bold;
+	text-align: right;
+	border-bottom: thin solid black;
+}
+.FooterStyle
+{
+	border-top: thin solid black;
+	font-weight: bold;
+	font-size: 10px;
+}
+.FooterStyleRight
+{
+	border-top: thin solid black;
+	font-weight: bold;
+	font-size: 10px;
+	text-align: right;
+}
+.FooterStyleRightBold
+{
+	border-top: thin solid black;
+	font-weight: bold;
+	font-size: 10px;
+	text-align: right;
+}
+.ProductHeader
+{
+	font-size: 11px;
+	font-family: Verdana, Arial;
+	font-weight: bold;
+}
+.ProductHeaderRight
+{
+	font-size: 11px;
+	font-family: Verdana, Arial;
+	font-weight: bold;
+	text-align: right;
+}
+.Content
+{
+	background-color: white;	
+}
+.CategoryHeader
+{
+	font-size: 14px;
+	font-weight: bold;
+	border-bottom: thin solid black;
+	text-transform: none;
+}
+.CategoryHeaderHier
+{
+	font-size: 14px;
+	font-weight: bold;
+	border-bottom: thin solid black;
+	color: Black;
+	text-transform: none;
+	line-height: 30px;
+}
+.CategoryHeaderHierGold
+{
+	font-size: 14px;
+	font-weight: bold;
+	border-bottom: thin solid black;
+	text-transform: none;
+	line-height: 30px;
+}
+
+.CategoryFooter
+{
+	border-top: thin solid black;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+.CategoryFooterHier
+{
+	font-family: Verdana, Arial;
+	border-top: thin solid black;
+	font-weight: normal;
+	font-size: 10px;
+}
+
+.PagerHier
+{
+	font-family: Verdana, Arial;
+	font-weight: normal;
+	color: black;
+	font-size: 10px;
+}
+
+A:link, A:visited
+{
+	font-size: 11px;
+	color: black;
+	text-decoration: none;
+}
+A:active, A:hover
+{
+	color: #990000;
+	text-decoration: underline;
+}
+
+A.hier:link
+{
+	font-size: 11px;
+	color: black;
+	font-weight: bolder;
+	text-decoration: underline;
+}
+A.hier:visited
+{
+	font-size: 11px;
+	color: #666666;
+	font-weight: bolder;
+	text-decoration: underline;
+}
+
+A.hier:active, A.hier:hover
+{
+	color: #CC6600;
+	font-weight: bolder;
+	text-decoration: underline;
+}
+.mainlink
+{
+	font-size: 14px;
+	font-weight: bold;
+	color: #999966;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+A.mainlink:link, A.mainlink:visited
+{
+	font-size: 14px;
+	font-weight: bold;
+	color: #999966;
+	text-decoration: underline;
+	text-transform: uppercase
+}
+A.mainlink:active, A.mainlink:hover
+{
+	color: #990000;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+.Title
+{
+	color: black;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: Verdana, Arial;
+	text-transform: uppercase;
+}
+.textbold 
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 16px;
+	font-weight: bold;
+}
+.text
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 16px;
+}
+.red 
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 12px;
+	color: #990000;
+}
+A.red:active, A.red:link
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 12px;
+	color: #000000;
+	text-decoration: underline;
+}
+A.red:visited
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 12px;
+	color: #000000;
+	text-decoration: underline;
+}
+.ReportTitle 
+{
+	font-size: 14px;
+	font-weight: bold;
+	color: black;
+	text-transform: uppercase;
+}
+div.code
+{
+	width: 90%;
+	font-family: "lucida console";
+	padding: 20px;
+}
+.HeadBg
+{
+	background-color: darkred;
+}
+.SubHead
+{
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: darkred;
+}
+.Normal
+{
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	line-height: 12px;
+}
+P, .NormalIndent
+{
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	margin-left: 20px;
+}
+.HeadSeparator
+{
+	background-color: #9D0000;
+}
+.LogoBG
+{
+	background-color: Black;
+}
+.Select
+{
+	font-size: 12px;
+	font-weight: bold;
+	border-bottom: thin solid #636363;
+	text-transform: none;
+}
+.bold
+{
+	font-weight: bold;
+}
+.ColoredOrder
+{
+	font-weight: bold;
+}
+@media print {
+	.printbutton {visibility:hidden;}
+}

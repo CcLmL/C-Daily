@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "D:\...\RSS\", ".", "{76DFEE74-C7CC-43FD-A4EF-A2D5B546C05D}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.VirtualPath = "/RSS"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\Web2.0ASP.NET2.0\Web2ASPNET2\RSS\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\RSS\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/RSS"
+		Release.AspNetCompiler.PhysicalPath = "..\..\Web2.0ASP.NET2.0\Web2ASPNET2\RSS\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\RSS\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "3034"
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "RssSetup", "..\Setup\RssSetup\RssSetup.vdproj", "{B862BC32-502B-4CB7-9C71-67E57B75486A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Release|.NET = Release|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76DFEE74-C7CC-43FD-A4EF-A2D5B546C05D}.Debug|.NET.ActiveCfg = Debug|.NET
+		{76DFEE74-C7CC-43FD-A4EF-A2D5B546C05D}.Debug|.NET.Build.0 = Debug|.NET
+		{76DFEE74-C7CC-43FD-A4EF-A2D5B546C05D}.Release|.NET.ActiveCfg = Debug|.NET
+		{76DFEE74-C7CC-43FD-A4EF-A2D5B546C05D}.Release|.NET.Build.0 = Debug|.NET
+		{B862BC32-502B-4CB7-9C71-67E57B75486A}.Debug|.NET.ActiveCfg = Debug
+		{B862BC32-502B-4CB7-9C71-67E57B75486A}.Release|.NET.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

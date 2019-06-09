@@ -1,0 +1,9 @@
+			SqlConnection mycon=new SqlConnection("server=.;database=xbdzzw;uid=sa;pwd=");
+			mycon.Open();
+			SqlCommand mycmd= new SqlCommand("select  * from stocksurr where id=5",mycon);
+			SqlDataReader dr= mycmd.ExecuteReader();
+		    byte [] b1=(byte[])dr["document"];
+//		    string values=System.Text.Encoding.GetEncoding("gb2312").GetString(ib,0,2);
+			MemoryStream ms=new MemoryStream(b1);
+			richTextBox1.LoadFile(ms,System.Windows.Forms.RichTextBoxStreamType.UnicodePlainText);
+			mycon.Close();

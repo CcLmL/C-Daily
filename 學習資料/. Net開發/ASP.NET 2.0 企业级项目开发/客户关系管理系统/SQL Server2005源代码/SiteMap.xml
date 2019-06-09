@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMapNode  url="" title="客户关系管理系统"  description="">
+  <siteMapNode url="" title="基础配置"  description="">
+    <siteMapNode url="AreaAddPage.aspx" title="添加区域"  description="" />
+    <siteMapNode url="AddCity.aspx" title="添加城市"  description="" />
+    <siteMapNode url="ViewAreaCityPage.aspx" title="查看区域城市"  description="" />
+    <siteMapNode url="DepartPage.aspx" title="部门设置"  description="" />
+    <siteMapNode url="UserStatePage.aspx" title="客户状态设置"  description="" />
+    <siteMapNode url="UserGradePage.aspx" title="客户等级设置"  description="" />
+    <siteMapNode url="UserTypePage.aspx" title="客户业务类型设置"  description="" />
+  </siteMapNode>
+  <siteMapNode url="" title="客户管理"  description="">
+    <siteMapNode url="" title="客户资料管理"  description="" >
+      <siteMapNode url="AddUserPage.aspx" title="添加客户"  description="" />
+      <siteMapNode url="EditUserPage.aspx" title="修改客户"  description="" />
+      <siteMapNode url="ViewUserPage.aspx" title="查询客户"  description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="联系人管理"  description="" >
+      <siteMapNode url="AddLinkmanPage.aspx" title="添加联系人"  description="" />
+      <siteMapNode url="EditLinkmanPage.aspx" title="修改或查询联系人"  description="" />
+    </siteMapNode>
+  </siteMapNode>
+  <siteMapNode url="" title="员工管理"  description="">
+    <siteMapNode url="EmployeePage.aspx" title="添加和查询员工"  description="" />
+    <siteMapNode url="AddWorkLogPage.aspx" title="登记日志"  description="" />
+    <siteMapNode url="ViewWorkLogPage.aspx" title="日志查询"  description="" />
+    <siteMapNode url="LinkRecordPage.aspx" title="登记联系记录"  description="" />
+    <siteMapNode url="ViewLinkRecordPage.aspx" title="查询联系记录"  description="" />
+    <siteMapNode url="TaskManagePage.aspx?viewindex=0" title="登记计划任务"  description="" />
+    <siteMapNode url="TaskManagePage.aspx?viewindex=1" title="查询任务列表"  description="" />
+  </siteMapNode>
+  <siteMapNode url="" title="客户服务管理"  description="">
+    <siteMapNode url="NotionPage.aspx" title="登记投诉"  description="" />
+    <siteMapNode url="EditNotionPage.aspx" title="处理投诉"  description="" />
+    <siteMapNode url="RequirementPage.aspx" title="登记新需求"  description="" />
+    <siteMapNode url="EditRequirePage.aspx" title="需求处理意见"  description="" />
+    <siteMapNode url="BargainPage.aspx" title="合同管理"  description="" />
+    <siteMapNode url="SumUpPage.aspx" title="实施总结"  description="" />
+    <siteMapNode url="ViewSumUp.aspx" title="浏览实施项目"  description="" />
+  </siteMapNode>
+</siteMapNode>

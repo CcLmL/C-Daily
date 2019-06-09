@@ -1,0 +1,1 @@
+<%@ WebService Language="C#" CodeBehind="~/App_Code/WebFileService.cs" Class="Web2ASPNET2.WebStore.WebFileService" %>

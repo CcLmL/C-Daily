@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MessageShields>
+  <MessageShield ID="0" Sender="0" Reciever="0">
+  </MessageShield>
+  <MessageShield ID="1" Sender="1" Reciever="1" />
+</MessageShields>

@@ -1,0 +1,172 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<html>
+<head runat="server">
+    <title>无标题页</title>
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
+</head>
+<%--oncontextmenu=window.event.returnValue=false onselectstart=window.event.returnValue=false ondragstart=window.event.returnValue=false--%>
+<body>
+    <form id="form1" runat="server">
+        <table cellpadding="0" cellspacing="0" style="width: 1003px">
+            <tr>
+                <td style="width: 112px; height: 23px;">
+                </td>
+                <td style="width: 778px; height: 23px;">
+                    <table align="center" bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="778">
+                        <tr>
+                            <td align="left" width="546">
+                                <img height="36" src="images/01.GIF" width="248" /></td>
+                            <td class="shenhong" valign="bottom" width="232">
+                                <span style="font-size: 12px">
+                                <a href="javascript:window.external.addFavorite('http://www.mingrisoft.com/about.asp','**科技有限公司');">加入收藏 </a>
+&nbsp; |&nbsp; <a href=# onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.cxyhome.com');">设为首页</a>
+</span>&nbsp; |&nbsp; <a href="mailto:ABC***@1**.COM">联系我们</a></td>
+                        </tr>
+                    </table>
+                    <table align="center" background="images/daohangb.GIF" bgcolor="#ffffff" cellpadding="0"
+                        cellspacing="0" height="55" width="778">
+                        <tr>
+                            <td valign="top">
+                                <table cellpadding="0" cellspacing="0" height="27" width="779">
+                                    <tr>
+                                        <td class="daohangh" style="width: 153px">
+                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                            <asp:HyperLink ID="HyperLink1" runat="server" CssClass="daohangh" NavigateUrl="~/Default.aspx">首　　页</asp:HyperLink></td>
+                                        <td align="center" class="daohangh" style="width: 110px">
+                                            <a href="ShowPage/webZP.aspx"></a>
+                                            <asp:HyperLink ID="HyperLink2" runat="server" CssClass="daohangh" NavigateUrl="~/ShowPage/webZP.aspx">招聘信息</asp:HyperLink></td>
+                                        <td align="center" class="daohangh" width="117">
+                                            <a href="ShowPage/webGY.aspx"></a>
+                                            <asp:HyperLink ID="HyperLink3" runat="server" CssClass="daohangh" NavigateUrl="~/ShowPage/webGY.aspx">公寓信息</asp:HyperLink></td>
+                                        <td align="center" class="daohangh" width="112">
+                                            <a href="ShowPage/webWPQG.aspx"></a>
+                                            <asp:HyperLink ID="HyperLink4" runat="server" CssClass="daohangh" NavigateUrl="~/ShowPage/webWPQG.aspx">物品求购</asp:HyperLink></td>
+                                        <td align="center" class="daohangh" width="116">
+                                            <a href="ShowPage/webQDCD.aspx"></a>
+                                            <asp:HyperLink ID="HyperLink5" runat="server" CssClass="daohangh" NavigateUrl="~/ShowPage/webQDCD.aspx">求兑出兑</asp:HyperLink></td>
+                                        <td width="169">
+                                            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;<span class="daohangh"><asp:HyperLink ID="HyperLink6" runat="server" CssClass="daohangh" NavigateUrl="~/ShowPage/webXQHZ.aspx">寻求合作</asp:HyperLink></span></td>
+                                    </tr>
+                                </table>
+                                <table cellpadding="0" cellspacing="0" class="shenlan" height="28" width="779">
+                                    <tr>
+                                        <td class="shenlan" width="153">
+                                            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="shenlan"><asp:HyperLink ID="HyperLink7" runat="server" CssClass="shenlan" NavigateUrl="~/ShowPage/webPX.aspx">培训信息</asp:HyperLink></span></td>
+                                        <td align="center" class="shenlan" width="110">
+                                            <a href="ShowPage/webQZ.aspx"></a>
+                                            <asp:HyperLink ID="HyperLink8" runat="server" CssClass="shenlan" NavigateUrl="~/ShowPage/webQZ.aspx">求职信息</asp:HyperLink></td>
+                                        <td align="center" class="shenlan" width="117">
+                                            <a href="ShowPage/webJJ.aspx"></a>
+                                            <asp:HyperLink ID="HyperLink9" runat="server" CssClass="shenlan" NavigateUrl="~/ShowPage/webJJ.aspx">家教信息</asp:HyperLink></td>
+                                        <td align="center" class="shenlan" width="112">
+                                            <a href="ShowPage/webWPCS.aspx"></a>
+                                            <asp:HyperLink ID="HyperLink10" runat="server" CssClass="shenlan" NavigateUrl="~/ShowPage/webWPCS.aspx">物品出售</asp:HyperLink></td>
+                                        <td align="center" class="shenlan" width="116">
+                                            <a href="ShowPage/webCL.aspx"></a>
+                                            <asp:HyperLink ID="HyperLink11" runat="server" CssClass="shenlan" NavigateUrl="~/ShowPage/webCL.aspx">车辆信息</asp:HyperLink></td>
+                                        <td class="shenlan" width="169">
+                                            &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+                                            <asp:HyperLink ID="HyperLink12" runat="server" CssClass="shenlan" NavigateUrl="~/ShowPage/webQYGG.aspx">企业广告</asp:HyperLink></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table align="center" bgcolor="#ffffff" cellpadding="0" cellspacing="0" height="112"
+                        width="778">
+                        <tr>
+                            <td align="left" background="images/banner.jpg" height="112">
+                            </td>
+                        </tr>
+                    </table>
+            
+                </td>
+                <td style="width: 112px; height: 23px;">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 112px; height: 208px;">
+                </td>
+                <td style="width: 778px; height: 208px;">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                </td>
+                <td style="width: 112px; height: 208px;">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 112px; height: 29px;">
+                </td>
+                <td style="width: 778px; height: 29px;">
+                    <table align="center" bgcolor="#ffffff" cellpadding="0" cellspacing="0" height="59"
+                        width="778">
+                        <tr>
+                            <td background="images/end.gif" height="59" valign="bottom">
+                                <table align="center" width="359">
+                                    <tr>
+                                        <td align="center" class="danhuang" valign="bottom" width="363">
+                                            公司网址：www.mingri**ft.com 联系电:87****1287&nbsp; 96454**13<br />
+                                            吉林省**科技有限公司 版权所有 &nbsp;&nbsp;<a href="../Logon.aspx"><span class="danhuang" style=" text-decoration:none">后台入口</span></a></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="width: 112px; height: 29px;">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+<script language="JavaScript1.2">
+function move(x) {
+if (document.all) {
+object1.style.pixelLeft += x;
+object1.style.visibility = "visible"}
+else if (document.layers) {
+document.object1.left += x;
+document.object1.visibility = "show"}};
+function makeStatic() {
+if (document.all) {object1.style.pixelTop=document.body.scrollTop+20}
+else {eval(document.object1.top=eval(window.pageYOffset+20));}
+setTimeout("makeStatic()",0);}
+</script>
+<script language="JavaScript1.2">
+function positionmenu(){
+move(-100)
+}
+if (document.all) {document.write('<DIV ID="object1" style="visibility:hidden;cursor:hand; Position : Absolute ;Left : 100px ;Top : 120px ;100 : 120">')}
+</script>
+<table border="0" cellpadding="0" cellspacing="0" width="115" bgcolor="#000000">
+<script language="JavaScript1.2"><!--
+if (document.all||document.layers) {
+makeStatic();}
+var text=new Array();
+var thelink=new Array();
+text[0]="";
+thelink[0]="../infoadd.aspx";
+var linktarget=''
+function navigateie(which){
+if (linktarget=='')
+window.location=thelink[which]
+else if (linktarget=='new')
+window.open(thelink[which])
+else{
+temp_var=eval("window.parent."+linktarget)
+temp_var.location=thelink[which]
+}
+}
+for (i=0;i<=text.length-1;i++)
+if (document.all) {document.write('<TR><TD height=159 background=images/fabu.gif onclick="navigateie('+i+')" onmouseover="className=\'hl\'" onmouseout="className=\'n\'"><FONT SIZE=2 FACE=ARIAL>&nbsp;'+text[i]+'</FONT></TD></TR>')}
+else {document.write('<TR><TD background="images/fabu.gif"><ILAYER><LAYER HEIGHT="18" width=131><FONT SIZE=2 FACE=ARIAL>&nbsp;<A HREF="'+thelink[i]+'" target="'+linktarget+'" id="nounderline">'+text[i]+'</A></FONT></LAYER></ILAYER></TD></TR>')}
+</script>
+<tr>
+<td bgcolor="#0099FF"><font size="1" face="Arial"> </font></td>
+</TR>
+</table>
+<script language="JavaScript1.2">
+if (document.all) {document.write('</DIV>')}
+window.onload=positionmenu
+</script>

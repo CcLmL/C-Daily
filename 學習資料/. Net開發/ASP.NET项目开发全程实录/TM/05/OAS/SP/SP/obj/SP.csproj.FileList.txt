@@ -1,0 +1,5 @@
+bin\Debug\SP.dll
+bin\Debug\SP.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\SP.dll
+obj\Debug\SP.pdb

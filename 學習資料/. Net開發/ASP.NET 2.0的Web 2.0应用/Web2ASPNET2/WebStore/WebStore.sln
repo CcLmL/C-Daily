@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "D:\...\WebStore\", ".", "{91489003-76E7-4F5B-8410-A0893E050A42}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.VirtualPath = "/WebStore"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\Web2.0ASP.NET2.0\Web2ASPNET2\WebStore\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\WebStore\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/WebStore"
+		Release.AspNetCompiler.PhysicalPath = "..\..\Web2.0ASP.NET2.0\Web2ASPNET2\WebStore\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\WebStore\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1912"
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "WebStoreSetup", "..\Setup\WebStoreSetup\WebStoreSetup.vdproj", "{3AD9FCBA-4671-43FF-83F2-1A1090B5493A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Release|.NET = Release|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91489003-76E7-4F5B-8410-A0893E050A42}.Debug|.NET.ActiveCfg = Debug|.NET
+		{91489003-76E7-4F5B-8410-A0893E050A42}.Debug|.NET.Build.0 = Debug|.NET
+		{91489003-76E7-4F5B-8410-A0893E050A42}.Release|.NET.ActiveCfg = Debug|.NET
+		{91489003-76E7-4F5B-8410-A0893E050A42}.Release|.NET.Build.0 = Debug|.NET
+		{3AD9FCBA-4671-43FF-83F2-1A1090B5493A}.Debug|.NET.ActiveCfg = Debug
+		{3AD9FCBA-4671-43FF-83F2-1A1090B5493A}.Release|.NET.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

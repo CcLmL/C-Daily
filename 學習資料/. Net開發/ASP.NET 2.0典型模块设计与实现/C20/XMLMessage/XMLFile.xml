@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="gb2312"?>
+<message>
+  <msgrecord >
+    <name>cgj</name>
+    <mail>cgj@263.net</mail>
+    <url>http://cgj.net</url>
+    <msg>这里真的挺不错</msg>
+  </msgrecord>
+  <msgrecord>
+    <name>huf</name>
+    <mail>huf@263.net</mail>
+    <url>http://</url>
+    <msg>为什么不能删除</msg>
+  </msgrecord>
+  <msgrecord>
+    <name>zgb</name>
+    <mail>zgb@263.net</mail>
+    <url>http://</url>
+    <msg>欢迎光临
+		历史回顾
+	</msg>
+  </msgrecord>
+</message>

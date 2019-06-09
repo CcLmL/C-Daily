@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title="会员卡积分系统"  description="">
+      <siteMapNode url="" title="会员资料管理" description="记载会员的详细资料">
+        <siteMapNode url="InsertMemberPage.aspx" title="添加会员资料"  description="" />
+        <siteMapNode url="GetMemberPage.aspx" title="查询会员资料"  description="" />
+        <siteMapNode url="EditMemberPage.aspx" title="修改会员资料"  description="" />
+      </siteMapNode>
+      <siteMapNode url="" title="会员卡类型管理"  description="实现会员卡的相关操作">
+          <siteMapNode url="AdminPage/CardTypePage.aspx?PageView=AddCardType" title="添加卡类型"  description="" />
+       　 <siteMapNode url="AdminPage/CardTypePage.aspx?PageView=UpdateCardType" title="修改卡类型名称"  description="" />
+          <siteMapNode url="AdminPage/CardTypePage.aspx?PageView=UpdateRule" title="修改积分规则"  description="" />
+      　  <siteMapNode url="AdminPage/CardTypePage.aspx?PageView=GetRule" title="获取积分规则"  description="" />
+      </siteMapNode>
+      <siteMapNode url="" title="商品管理"  description="实现商品的相关操作">
+        <siteMapNode url="StockSalePage.aspx" title="销售和退货"  description="" />
+        <siteMapNode url="FreeStockPage.aspx" title="积分反馈"  description="" />
+        <siteMapNode url="AdminPage/GiftRulePage.aspx" title="积分反馈规则"  description="" />
+      </siteMapNode>
+       <siteMapNode url="" title="会员积分管理"  description="实现积分的相关操作">
+          <siteMapNode url="CardCountPage.aspx" title="查询卡积分"  description="" />
+          <siteMapNode url="GetHistotyPage.aspx" title="积分历史记录"  description="" />
+          <siteMapNode url="HistoryHandlePage.aspx" title="积分处理"  description="" />
+      </siteMapNode>
+    </siteMapNode>
+</siteMap>

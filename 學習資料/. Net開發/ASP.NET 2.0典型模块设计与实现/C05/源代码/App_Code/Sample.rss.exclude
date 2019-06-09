@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Test</title>
+    <link>~/SimpleReader.aspx</link>
+    <description>This is a sample</description>
+    <ttl>10</ttl>
+    <name></name>
+    <user></user>
+    <item>
+      <title>OK</title>
+      <description>It's ok</description>
+      <link></link>
+    </item>
+  </channel>
+</rss>

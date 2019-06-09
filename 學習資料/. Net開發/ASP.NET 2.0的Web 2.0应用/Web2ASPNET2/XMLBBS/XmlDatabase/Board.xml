@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Boards>
+  <Board ID="0" Name="首页" ParentID="-1" CreateDate="2006-11-25 00:00:00" ShowOrder="1" State="0" SubCount="0" Remark="备注信息">
+  </Board>
+  <Board ID="1" Name="生活" ParentID="0" CreateDate="2006-11-26 11:03:40" ShowOrder="1" State="0" SubCount="0" Remark="生活中的大大小小的事情。2006.11.26" />
+  <Board ID="2" Name="ASP.NET编程" ParentID="0" CreateDate="2006-11-27 21:26:36" ShowOrder="1" State="0" SubCount="0" Remark="ASP.NET网站开发" />
+  <Board ID="3" Name=".NET编程" ParentID="0" CreateDate="2006-11-27 21:26:55" ShowOrder="1" State="0" SubCount="0" Remark=".NET开发" />
+</Boards>

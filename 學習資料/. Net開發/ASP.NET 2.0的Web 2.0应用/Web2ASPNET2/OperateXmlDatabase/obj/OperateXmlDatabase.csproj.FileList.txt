@@ -1,0 +1,7 @@
+bin\Debug\Web2ASPNET2.OperateXmlDatabase.dll
+bin\Debug\Web2ASPNET2.OperateXmlDatabase.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Web2ASPNET2.OperateXmlDatabase.dll
+obj\Debug\Web2ASPNET2.OperateXmlDatabase.pdb
+bin\Debug\Web2ASPNET2.CommonOperation.dll
+bin\Debug\Web2ASPNET2.CommonOperation.pdb

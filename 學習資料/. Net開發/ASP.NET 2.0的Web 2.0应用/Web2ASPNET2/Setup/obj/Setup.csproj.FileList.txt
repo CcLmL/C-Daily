@@ -1,0 +1,14 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Setup.csproj.GenerateResource.Cache
+obj\Debug\Web2ASPNET2.Setup.Properties.Resources.resources
+obj\Debug\Web2ASPNET2.Setup.mailForm.resources
+obj\Debug\Web2ASPNET2.Setup.UserControls.DatabaseUC.resources
+obj\Debug\Web2ASPNET2.Setup.UserControls.StatusUC.resources
+obj\Debug\Web2ASPNET2.Setup.UserControls.prepareUC.resources
+obj\Debug\Web2ASPNET2.Setup.UserControls.webSetupUC.resources
+obj\Debug\Web2ASPNET2.Setup.UserControls.FinishUC.resources
+bin\Debug\Setup.exe
+bin\Debug\Setup.pdb
+obj\Debug\Setup.exe
+obj\Debug\Setup.pdb
+bin\Debug\Setup.exe.config

@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage"   %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>无标题页</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table style="width: 800px; height: 300px">
+    <tr >
+    <td colspan="2" align="center" style="border-bottom: silver thin double; height: 23px;">
+    <b style="border-bottom: silver thin double">北京连锁超市会员积分销售系统</b> &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp;&nbsp;<asp:LoginName ID="LoginName1" runat="server" Width="169px" />
+        &nbsp;
+    </td>
+    </tr>
+    <tr> 
+    <td  valign="top" style="border-right-style: solid">
+        <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" Width="254px" ImageSet="News" NodeIndent="10" Height="1px">
+            <ParentNodeStyle Font-Bold="False" />
+            <HoverNodeStyle Font-Underline="True" />
+            <SelectedNodeStyle Font-Underline="True" HorizontalPadding="0px" VerticalPadding="0px" />
+            <NodeStyle Font-Names="Arial" Font-Size="10pt" ForeColor="Black" HorizontalPadding="5px"
+                NodeSpacing="0px" VerticalPadding="0px" />
+        </asp:TreeView>
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+    </td>
+      <td style="width: 631px; height: 32px;" align="left"valign="top"> 
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server" >
+        </asp:contentplaceholder>
+       </td>
+    </tr> 
+    <tr>
+        <td colspan="2" align="center" style="border-top: silver thin double">
+        总部：北三环环球贸易中心
+        电话：010-88881111
+        E-MAIL：chaoshi@sina.com
+    </td>
+    </tr>
+    </table>
+
+    </form>
+</body>
+</html>

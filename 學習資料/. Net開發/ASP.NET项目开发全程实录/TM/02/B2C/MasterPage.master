@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%@ Register Src="userControl/navigate.ascx" TagName="navigate" TagPrefix="uc3" %>
+<%@ Register Src="userControl/bottom.ascx" TagName="bottom" TagPrefix="uc4" %>
+<%@ Register Src="userControl/LoadingControl.ascx" TagName="LoadingControl" TagPrefix="uc2" %>
+<%@ Register Src="userControl/menu.ascx" TagName="menu" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>母版页</title>
+    <style>
+    body:{margin-top:0px}
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table style="width :1000px; height :1200px;　font-size: 9pt; font-family: 宋体;  background-image: url(images/1294850_472733.gif); background-repeat:repeat"  align =center border="0" cellpadding="0" cellspacing="0">
+    <tr>
+    <td valign =top >
+   <table style="width :778px; height :855px;　font-size: 9pt; font-family: 宋体; "  align =center border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td colspan="2" valign =top  style ="width :778px; height :104px;background-image: url(images/banner.jpg); background-repeat:no-repeat " >
+                    <uc1:menu ID="Menu1" runat="server" />
+                    <table style="background-image: url(images/index1_11.gif); width: 774px; height: 109px">
+                        <tr>
+                            <td style="width: 100px">
+                            </td>
+                        </tr>
+                    </table>
+                 </td> 
+            </tr>
+            <tr>
+            <td style="width: 204px; height: 177px; vertical-align :top; border-left-width :thin ">
+                <uc2:LoadingControl id="LoadingControl1" runat="server">
+                </uc2:LoadingControl></td>
+            <td style="width: 574px; vertical-align :top; background-image: url(images/显示页面当前位置.jpg); background-repeat: repeat-y;" rowspan="2">
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+            </td>
+            </tr>
+            <tr>
+                <td align =left style="width: 204px; vertical-align :top ; height: 532px;" >
+                    <uc3:navigate id="Navigate1" runat="server">
+                    </uc3:navigate></td>
+                
+            </tr>
+            <tr>
+                <td colspan="2"  valign =top  style ="width :778px; height :116px;background-image: url(images/底部.jpg); background-repeat:no-repeat " >
+                    <uc4:bottom ID="Bottom1" runat="server" />
+                </td>
+                
+            </tr>
+        </table>
+    </td>
+    </tr>
+    </table>
+    </form>
+</body>
+</html>

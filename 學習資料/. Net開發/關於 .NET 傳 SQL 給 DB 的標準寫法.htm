@@ -1,0 +1,213 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML xmlns="http://www.w3.org/TR/REC-html40" xmlns:v = 
+"urn:schemas-microsoft-com:vml" xmlns:o = 
+"urn:schemas-microsoft-com:office:office" xmlns:w = 
+"urn:schemas-microsoft-com:office:word" xmlns:m = 
+"http://schemas.microsoft.com/office/2004/12/omml" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=big5">
+<META content="MSHTML 6.00.6000.16915" name=GENERATOR>
+<STYLE>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:新細明體;
+	panose-1:2 2 3 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"\@新細明體";
+	panose-1:2 2 3 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;}
+ /* Page Definitions */
+ @page Section1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;}
+div.Section1
+	{page:Section1;}
+-->
+</STYLE>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1" />
+ </o:shapelayout></xml><![endif]-->
+<!--[if gte mso 9]><xml>
+<o:CustomDocumentProperties>
+<o:Note msdt:dt="string">請善用 OracleParameter 物件， 作為傳遞 SQL 給 DB Server 的方式，</o:Note>
+<o:ContentType msdt:dt="string">Document</o:ContentType>
+<o:Author0 msdt:dt="string">19</o:Author0>
+<o:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author0 msdt:dt="string">cjchen(陳俊榮)</o:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author0>
+<o:Notes0 msdt:dt="string">請善用 OracleParameter 物件， 作為傳遞 SQL 給 DB Server 的方式，</o:Notes0>
+</o:CustomDocumentProperties>
+</xml><![endif]-->
+<title>.NET 傳 SQL 給 DB 的標準寫法</title></HEAD>
+<BODY lang=ZH-TW style="TEXT-JUSTIFY-TRIM: punctuation" vLink=purple 
+link=blue><B>寄件者:</B> cjchen(陳俊榮)<BR><B>寄件日期:</B> 2009年5月20日星期三 下午 
+5:12<BR><B>收件者:</B> fionlin(林儀佩); ivyhuang(黃稜雅); yokodai(戴佑玲); amywang(王紹襲); 
+gracetsai(蔡宜樺); hedyhsu(徐妤涵); juliawang(王美萱); ellienlin(林惠倫); yingkaichung(鍾盈凱); 
+antonylee(李旻諺); joewong(翁彫峰); rogerpeng(彭聖凱); altonhuang(黃傳壽); evahuang(黃意芳); 
+watershih(施孟宏)<BR><B>副本:</B> emilywang(王怡萌)<BR><B>主旨:</B> 關於 .NET 傳 SQL 給 DB 
+的標準寫法<BR><BR><B>重要性:</B> 高<BR>
+<DIV class=Section1>
+<P class=MsoNormal><SPAN lang=EN-US>Dear All</SPAN><SPAN 
+style="FONT-FAMILY: '新細明體','serif'">：</SPAN><SPAN 
+lang=EN-US><o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: '新細明體','serif'">請大家注意一下</SPAN><SPAN 
+lang=EN-US> .NET </SPAN><SPAN 
+style="FONT-FAMILY: '新細明體','serif'">程式在傳遞</SPAN><SPAN lang=EN-US> SQL 
+</SPAN><SPAN style="FONT-FAMILY: '新細明體','serif'">給</SPAN><SPAN lang=EN-US> DB 
+Server </SPAN><SPAN style="FONT-FAMILY: '新細明體','serif'">的方式，請善用</SPAN><SPAN 
+lang=EN-US> OracleParameter </SPAN><SPAN 
+style="FONT-FAMILY: '新細明體','serif'">物件，我以一個簡單的範例來說明，假設要從料號主檔查詢料號資料，條件只有</SPAN><SPAN 
+lang=EN-US> organization_id &amp; segment1</SPAN><SPAN 
+style="FONT-FAMILY: '新細明體','serif'">，假設此兩條件是根據</SPAN><SPAN lang=EN-US> User 
+</SPAN><SPAN style="FONT-FAMILY: '新細明體','serif'">的選擇而變動，</SPAN><SPAN 
+lang=EN-US>.NET </SPAN><SPAN 
+style="FONT-FAMILY: '新細明體','serif'">標準的寫法如下：</SPAN><SPAN 
+lang=EN-US><o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; FONT-FAMILY: Consolas">&nbsp;&nbsp;&nbsp; <SPAN 
+style="COLOR: blue">string</SPAN> sql = <SPAN style="COLOR: #a31515">@"select 
+*<o:p></o:p></SPAN></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; COLOR: #a31515; FONT-FAMILY: Consolas">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;from inv.mtl_system_items<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; COLOR: #a31515; FONT-FAMILY: Consolas">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where segment1 = :item_num<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; COLOR: #a31515; FONT-FAMILY: Consolas">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and organization_id = 
+:organization_id"</SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; FONT-FAMILY: Consolas">;<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; FONT-FAMILY: Consolas"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; FONT-FAMILY: Consolas">&nbsp;&nbsp;&nbsp; <SPAN 
+style="COLOR: #2b91af">OracleCommand</SPAN> cmd = <SPAN 
+style="COLOR: blue">new</SPAN> <SPAN 
+style="COLOR: #2b91af">OracleCommand</SPAN>(sql, conn);<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; FONT-FAMILY: Consolas">&nbsp;&nbsp;&nbsp; 
+cmd.Parameters.Add(<SPAN style="COLOR: #a31515">"organization_id"</SPAN>, <SPAN 
+style="COLOR: #2b91af">OracleType</SPAN>.Number).Value = 
+24;<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; FONT-FAMILY: Consolas">&nbsp;&nbsp;&nbsp; 
+cmd.Parameters.Add(<SPAN style="COLOR: #a31515">"item_num"</SPAN>, <SPAN 
+style="COLOR: #2b91af">OracleType</SPAN>.VarChar, 32).Value = <SPAN 
+style="COLOR: #a31515">"S10-1200070-S59"</SPAN>;<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; FONT-FAMILY: Consolas"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN 
+style="FONT-FAMILY: '新細明體','serif'">請不要使用字串相加的方式，例如：</SPAN><SPAN 
+lang=EN-US><o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; FONT-FAMILY: Consolas">&nbsp;&nbsp;&nbsp; <SPAN 
+style="COLOR: blue">int</SPAN> organization_id = 24;<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; FONT-FAMILY: Consolas">&nbsp;&nbsp;&nbsp; <SPAN 
+style="COLOR: blue">string</SPAN> item_num = <SPAN 
+style="COLOR: #a31515">"S10-1200070-S59"</SPAN>;<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; FONT-FAMILY: Consolas"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; FONT-FAMILY: Consolas">&nbsp;&nbsp;&nbsp; <SPAN 
+style="COLOR: blue">string</SPAN> sql = <SPAN style="COLOR: #a31515">"select * 
+from inv.mtl_system_items where segment1 = '"</SPAN> + item_num + <SPAN 
+style="COLOR: #a31515">"' and organization_id = "</SPAN> + 
+organization_id.ToString();<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; FONT-FAMILY: Consolas"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; FONT-FAMILY: Consolas">&nbsp;&nbsp;&nbsp; <SPAN 
+style="COLOR: #2b91af">OracleCommand</SPAN> cmd = <SPAN 
+style="COLOR: blue">new</SPAN> <SPAN 
+style="COLOR: #2b91af">OracleCommand</SPAN>(sql, conn);<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; FONT-FAMILY: Consolas"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: '新細明體','serif'">也不要用</SPAN><SPAN 
+lang=EN-US>StringBuilder </SPAN><SPAN 
+style="FONT-FAMILY: '新細明體','serif'">相加的方式，例如：</SPAN><SPAN 
+lang=EN-US><o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; FONT-FAMILY: Consolas">&nbsp;&nbsp; &nbsp;<SPAN 
+style="COLOR: blue">int</SPAN> organization_id = 24;<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; FONT-FAMILY: Consolas">&nbsp;&nbsp;&nbsp; <SPAN 
+style="COLOR: blue">string</SPAN> item_num = <SPAN 
+style="COLOR: #a31515">"S10-1200070-S59"</SPAN>;<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; FONT-FAMILY: Consolas"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; FONT-FAMILY: Consolas">&nbsp;&nbsp;&nbsp; <SPAN 
+style="COLOR: #2b91af">StringBuilder</SPAN> sql = <SPAN 
+style="COLOR: blue">new</SPAN> <SPAN 
+style="COLOR: #2b91af">StringBuilder</SPAN>(<SPAN style="COLOR: #a31515">"select 
+* from inv.mtl_system_items where segment1 = '"</SPAN>);<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; FONT-FAMILY: Consolas">&nbsp;&nbsp;&nbsp; 
+sql.Append(item_num);<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; FONT-FAMILY: Consolas">&nbsp;&nbsp;&nbsp; 
+sql.Append(<SPAN style="COLOR: #a31515">"'"</SPAN>);<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; FONT-FAMILY: Consolas">&nbsp;&nbsp;&nbsp; 
+sql.Append(<SPAN style="COLOR: #a31515">" and organization_id = 
+"</SPAN>);<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; FONT-FAMILY: Consolas">&nbsp;&nbsp;&nbsp; 
+sql.Append(organization_id);<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; FONT-FAMILY: Consolas"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; FONT-FAMILY: Consolas">&nbsp;&nbsp;&nbsp; <SPAN 
+style="COLOR: #2b91af">OracleCommand</SPAN> cmd = <SPAN 
+style="COLOR: blue">new</SPAN> <SPAN 
+style="COLOR: #2b91af">OracleCommand</SPAN>(sql.ToString(), 
+conn);<o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; FONT-FAMILY: Consolas"><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN 
+style="FONT-FAMILY: '新細明體','serif'">方法一最好閱讀也最好維謢，請大家儘可能改用方法一的寫法，謝謝配合。</SPAN><SPAN 
+lang=EN-US><o:p></o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN 
+lang=EN-US>Jerry<o:p></o:p></SPAN></P></DIV></BODY></HTML>

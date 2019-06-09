@@ -1,0 +1,14 @@
+--前提是已经创建好了Vote数据库
+USE [Vote]
+GO
+/****** 对象:  Table [dbo].[VoteItem]    脚本日期: 09/07/2006 18:21:58 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[VoteItem](
+	[ItemID] [int] IDENTITY(1,1) NOT NULL,
+	[ItemName] [nvarchar](30) COLLATE Chinese_PRC_CI_AS NOT NULL,
+	[ItemCount] [int] NULL CONSTRAINT [DF_VoteItem_ItemCount]  DEFAULT ((0))
+) ON [PRIMARY]
+

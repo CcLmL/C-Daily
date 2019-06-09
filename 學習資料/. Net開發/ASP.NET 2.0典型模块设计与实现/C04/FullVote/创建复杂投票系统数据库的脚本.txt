@@ -1,0 +1,91 @@
+/*==============================================================*/
+/* Database name:  PhysicalDataModel_2                          */
+/* DBMS name:      Microsoft SQL Server 2000                    */
+/* Created on:     2006-9-8 18:24:58                            */
+/*==============================================================*/
+
+
+alter table IpControl
+   drop constraint FK_IPCONTRO_REFERENCE_VOTEITEM
+go
+
+
+alter table VoteItem
+   drop constraint FK_VOTEITEM_REFERENCE_VOTETITL
+go
+
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('IpControl')
+            and   type = 'U')
+   drop table IpControl
+go
+
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('VoteItem')
+            and   type = 'U')
+   drop table VoteItem
+go
+
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('VoteTitle')
+            and   type = 'U')
+   drop table VoteTitle
+go
+
+
+/*==============================================================*/
+/* Table: IpControl                                             */
+/*==============================================================*/
+create table IpControl (
+IpID                 int                  identity,
+ItemID               int                  null,
+IpAddress            nvarchar(30)         not null,
+LoginTime            datetime             not null,
+constraint PK_IPCONTROL primary key  (IpID)
+)
+go
+
+
+/*==============================================================*/
+/* Table: VoteItem                                              */
+/*==============================================================*/
+create table VoteItem (
+ItemID               int                  identity,
+TitleID              int                  null,
+ItemName             nvarchar(30)         not null,
+ItemCount            int                  not null default 0,
+constraint PK_VOTEITEM primary key  (ItemID)
+)
+go
+
+
+/*==============================================================*/
+/* Table: VoteTitle                                             */
+/*==============================================================*/
+create table VoteTitle (
+TitleID              int                  identity,
+TitleName            nvarchar(30)         not null,
+IsCurrent            bit                  null,
+constraint PK_VOTETITLE primary key  (TitleID)
+)
+go
+
+
+alter table IpControl
+   add constraint FK_IPCONTRO_REFERENCE_VOTEITEM foreign key (ItemID)
+      references VoteItem (ItemID)
+go
+
+
+alter table VoteItem
+   add constraint FK_VOTEITEM_REFERENCE_VOTETITL foreign key (TitleID)
+      references VoteTitle (TitleID)
+go
+
+

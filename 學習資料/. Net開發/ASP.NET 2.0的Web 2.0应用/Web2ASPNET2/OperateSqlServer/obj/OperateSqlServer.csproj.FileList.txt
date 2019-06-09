@@ -1,0 +1,5 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\Web2ASPNET2.OperateSqlServer.dll
+bin\Debug\Web2ASPNET2.OperateSqlServer.pdb
+obj\Debug\Web2ASPNET2.OperateSqlServer.dll
+obj\Debug\Web2ASPNET2.OperateSqlServer.pdb

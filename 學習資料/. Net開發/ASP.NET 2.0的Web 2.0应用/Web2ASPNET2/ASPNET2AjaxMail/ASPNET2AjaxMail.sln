@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "D:\...\ASPNET2AjaxMail\", ".", "{35EC3339-B8DC-47D0-90A4-8F99C0F4986A}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.VirtualPath = "/ASPNET2AjaxMail"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\Web2.0ASP.NET2.0\Web2ASPNET2\ASPNET2AjaxMail\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\ASPNET2AjaxMail\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/ASPNET2AjaxMail"
+		Release.AspNetCompiler.PhysicalPath = "..\..\Web2.0ASP.NET2.0\Web2ASPNET2\ASPNET2AjaxMail\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\ASPNET2AjaxMail\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1713"
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "AjaxSetup", "..\Setup\AjaxSetup\AjaxSetup.vdproj", "{AD664EFF-12F7-4418-B649-45B204088B3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Release|.NET = Release|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35EC3339-B8DC-47D0-90A4-8F99C0F4986A}.Debug|.NET.ActiveCfg = Debug|.NET
+		{35EC3339-B8DC-47D0-90A4-8F99C0F4986A}.Debug|.NET.Build.0 = Debug|.NET
+		{35EC3339-B8DC-47D0-90A4-8F99C0F4986A}.Release|.NET.ActiveCfg = Debug|.NET
+		{35EC3339-B8DC-47D0-90A4-8F99C0F4986A}.Release|.NET.Build.0 = Debug|.NET
+		{AD664EFF-12F7-4418-B649-45B204088B3D}.Debug|.NET.ActiveCfg = Debug
+		{AD664EFF-12F7-4418-B649-45B204088B3D}.Release|.NET.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "D:\...\WebTags\", ".", "{DCD74EC8-716A-4A81-A39F-224FD18D10D3}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.VirtualPath = "/WebTags"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\Web2.0ASP.NET2.0\Web2ASPNET2\WebTags\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\WebTags\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/WebTags"
+		Release.AspNetCompiler.PhysicalPath = "..\..\Web2.0ASP.NET2.0\Web2ASPNET2\WebTags\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\WebTags\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1820"
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "WebTagsSetup", "..\Setup\WebTagsSetup\WebTagsSetup.vdproj", "{43BF25AA-33FB-437D-B9A3-554A8B76D03D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Release|.NET = Release|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCD74EC8-716A-4A81-A39F-224FD18D10D3}.Debug|.NET.ActiveCfg = Debug|.NET
+		{DCD74EC8-716A-4A81-A39F-224FD18D10D3}.Debug|.NET.Build.0 = Debug|.NET
+		{DCD74EC8-716A-4A81-A39F-224FD18D10D3}.Release|.NET.ActiveCfg = Debug|.NET
+		{DCD74EC8-716A-4A81-A39F-224FD18D10D3}.Release|.NET.Build.0 = Debug|.NET
+		{43BF25AA-33FB-437D-B9A3-554A8B76D03D}.Debug|.NET.ActiveCfg = Debug
+		{43BF25AA-33FB-437D-B9A3-554A8B76D03D}.Release|.NET.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

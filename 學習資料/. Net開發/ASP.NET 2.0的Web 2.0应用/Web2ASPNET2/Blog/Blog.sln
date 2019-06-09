@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "D:\...\Blog\", ".", "{6D1CFD5F-C7A5-49F4-A499-BA2160288E72}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.VirtualPath = "/Blog"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\Web2.0ASP.NET2.0\Web2ASPNET2\Blog\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Blog\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Blog"
+		Release.AspNetCompiler.PhysicalPath = "..\..\Web2.0ASP.NET2.0\Web2ASPNET2\Blog\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Blog\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1812"
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BlogSetup", "..\Setup\BlogSetup\BlogSetup.vdproj", "{F54F834A-E83C-415F-BF0A-04EE672A5CD2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Release|.NET = Release|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D1CFD5F-C7A5-49F4-A499-BA2160288E72}.Debug|.NET.ActiveCfg = Debug|.NET
+		{6D1CFD5F-C7A5-49F4-A499-BA2160288E72}.Debug|.NET.Build.0 = Debug|.NET
+		{6D1CFD5F-C7A5-49F4-A499-BA2160288E72}.Release|.NET.ActiveCfg = Debug|.NET
+		{6D1CFD5F-C7A5-49F4-A499-BA2160288E72}.Release|.NET.Build.0 = Debug|.NET
+		{F54F834A-E83C-415F-BF0A-04EE672A5CD2}.Debug|.NET.ActiveCfg = Debug
+		{F54F834A-E83C-415F-BF0A-04EE672A5CD2}.Release|.NET.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

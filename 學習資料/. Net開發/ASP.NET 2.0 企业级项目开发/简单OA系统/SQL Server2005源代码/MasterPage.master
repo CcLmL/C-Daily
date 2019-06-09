@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+
+<head runat="server">
+    <title>无标题页</title>
+<!-- <meta http-equiv="refresh"content="10">-->
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        &nbsp;<table style="width: 794px">
+            <tr>
+                <td rowspan="2" style="width: 175px">
+                    <asp:Menu ID="Menu1" runat="server" DataSourceID="XmlDataSource1" BackColor="#F7F6F3" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#7C6F57" StaticSubMenuIndent="10px" Orientation="Horizontal">
+                        <DataBindings>
+                            <asp:MenuItemBinding DataMember="siteMapNodes" TextField="title" />
+                            <asp:MenuItemBinding DataMember="siteMapNode" TextField="title" NavigateUrlField="url" />
+                            <asp:MenuItemBinding DataMember="siteMapNode" TextField="title" NavigateUrlField="url" />
+                            <asp:MenuItemBinding DataMember="siteMapNode" TextField="title" NavigateUrlField="url" />
+                        </DataBindings>
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                        <DynamicMenuStyle BackColor="#F7F6F3" />
+                        <StaticSelectedStyle BackColor="#5D7B9D" />
+                        <DynamicSelectedStyle BackColor="#5D7B9D" />
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <StaticHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                    </asp:Menu>
+                    <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/Menu.xml"></asp:XmlDataSource>
+                </td>
+                <td style="width: 306px">
+                    <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollAmount="1" scrollDelay="30" direction="up" >
+                    <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" >
+                    <ItemTemplate>
+                    <table><tr> <td><%# DataBinder.Eval(Container.DataItem, "AfficheContent")%> </td> </tr></table>
+                    </ItemTemplate>
+                    </asp:DataList></marquee>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SimpleOAConnectionString %>"
+                        SelectCommand="SELECT AfficheContent FROM Affiche WHERE (DATEDIFF(day, AfficheTime, GETDATE()) = 0)">
+                    </asp:SqlDataSource>
+                    &nbsp;
+
+
+                </td>
+                <td>
+                    &nbsp;<asp:LoginName ID="LoginName1" runat="server" />
+                    &nbsp;
+                    <asp:HyperLink ID="HyperLink1" runat="server">无新消息</asp:HyperLink>
+                    <asp:LoginStatus ID="LoginStatus1" runat="server" OnLoggingOut="LoginStatus1_LoggingOut" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+            模板区</asp:contentplaceholder>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

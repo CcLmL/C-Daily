@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Users>
+	<User ID="0" UserName="" Password="" Email="" RoleID="0" CreateDate=""></User>
+	<User ID="1" UserName="admin" Password="admin" Email="admin@web2aspnet2.com" RoleID="1" CreateDate="2006-11-16 22:15:00"></User>
+	<User ID="2" UserName="zydchina" Password="dt5233" Email="zhengyd@gucas.ac.cn" RoleID="2" CreateDate="2006-11-18 22:15:00"></User>
+</Users>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Roles>
+	<Role ID="0" RoleName="" ProjectID="8"></Role>
+	<Role ID="1" RoleName="Administrator" ProjectID="8"></Role>
+	<Role ID="2" RoleName="Noraml" ProjectID="8"></Role>
+</Roles>

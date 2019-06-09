@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "D:\...\Sample_11_01\", ".", "{642CFFBA-C0F6-4209-AA22-C7F27E6285D0}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.VirtualPath = "/Sample_11_01"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\Web2.0ASP.NET2.0\ch11\Sample_11_01\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Sample_11_01\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Sample_11_01"
+		Release.AspNetCompiler.PhysicalPath = "..\..\Web2.0ASP.NET2.0\ch11\Sample_11_01\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Sample_11_01\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1082"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{642CFFBA-C0F6-4209-AA22-C7F27E6285D0}.Debug|.NET.ActiveCfg = Debug|.NET
+		{642CFFBA-C0F6-4209-AA22-C7F27E6285D0}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,37 @@
+﻿<%-- Button控件的外观 --%>
+<asp:Button runat="server" SkinID="btnSkin" BackColor="#DAEEEE" Font-Names="Tahoma" Font-Size="9pt" CssClass="Button" />
+
+<%-- TextBox控件的外观 --%>
+<asp:TextBox runat="server" SkinID="tbSkin" BackColor="#daeeee" Font-Names="Tahoma" />
+
+<%-- DropDownList控件的外观 --%>
+<asp:DropDownList SkinID="ddlSkin" runat="server"
+	BackColor="#DAEEEE" Font-Names="Tahoma" Font-Size="9pt" />
+
+<%-- GridView控件的外观 --%>
+<asp:GridView SkinID="gvSkin" runat="server" CssClass="Text" BackColor="White" BorderColor="#CC9966"
+	BorderStyle="None" BorderWidth="1px" CellPadding="4" AutoGenerateColumns="False" Font-Names="Tahoma" Width="100%">
+	<FooterStyle BackColor="#E8F4FF" ForeColor="#330099" />
+	<RowStyle ForeColor="#330099" />
+	<SelectedRowStyle BackColor="#E8F4FF" Font-Bold="True" ForeColor="#663399" />
+	<PagerStyle BackColor="#E8F4FF" ForeColor="#330099" HorizontalAlign="Center" />
+	<HeaderStyle BackColor="#DAEEEE" Font-Bold="True" ForeColor="Blue" Font-Names="Tahoma" />						
+</asp:GridView>
+
+<%-- DataList控件的外观 --%>
+<asp:DataList SkinID="dlSkin" runat="server" RepeatColumns="5" RepeatDirection="Horizontal" BackColor="White" BorderColor="#DAEEEE" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal" Width="100%" CssClass="Text">
+	<FooterStyle BackColor="White" ForeColor="#333333" />
+	<SelectedItemStyle BackColor="#DAEEEE" Font-Bold="True" ForeColor="Blue" Font-Names="Tahoma" Font-Size="9pt" HorizontalAlign="Center" />
+	<ItemStyle BackColor="White" ForeColor="#333333" Font-Names="Tahoma" HorizontalAlign="Center" />
+	<HeaderStyle BackColor="#336666" Font-Bold="True" ForeColor="White" />					
+</asp:DataList>
+
+<%-- TreeView控件的外观 --%>
+<asp:TreeView SkinID="tvSkin" runat="server">
+	<ParentNodeStyle Font-Bold="False" ForeColor="White" />
+	<HoverNodeStyle BackColor="DodgerBlue" BorderColor="#DAEEEE" BorderStyle="Solid" Font-Underline="True" ForeColor="DarkOrange" BorderWidth="2px" />
+	<SelectedNodeStyle BorderColor="#888888" BorderStyle="Solid" BorderWidth="1px" Font-Underline="False" HorizontalPadding="3px" VerticalPadding="1px" ForeColor="White" />
+	<NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Gray" HorizontalPadding="5px" NodeSpacing="1px" VerticalPadding="2px" />
+	<RootNodeStyle ForeColor="White" Font-Bold="True" />
+	<LeafNodeStyle ForeColor="White" />
+</asp:TreeView>

@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<Users>
+	<User>
+		<ID>1</ID>
+		<Username>admin</Username>
+		<Email>admin@web2aspnet2.com</Email>
+		<CreateDate>2006-11-16T22:15:00</CreateDate>
+	</User>
+	<User>
+		<ID>2</ID>
+		<Username>zydchina</Username>
+		<Email>dorient@126.com</Email>
+		<CreateDate>2006-11-17T22:18:46.670</CreateDate>
+	</User>
+	<User>
+		<ID>3</ID>
+		<Username>dorient</Username>
+		<Email>admin@web2aspnet2.com</Email>
+		<CreateDate>2006-11-16T22:15:00</CreateDate>
+	</User>
+	<User>
+		<ID>4</ID>
+		<Username>23424</Username>
+		<Email>123@126.bon</Email>
+		<CreateDate>2006-12-16T17:27:05.827</CreateDate>
+	</User>
+	<User>
+		<ID>5</ID>
+		<Username>2222222</Username>
+		<Email>123@126.bon</Email>
+		<CreateDate>2006-12-16T17:27:05.827</CreateDate>
+	</User>
+</Users>

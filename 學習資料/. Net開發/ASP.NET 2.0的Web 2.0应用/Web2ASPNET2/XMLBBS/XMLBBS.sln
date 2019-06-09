@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "D:\...\XMLBBS\", ".", "{32D2E19E-40C3-4ABA-867A-60C3192A4940}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.VirtualPath = "/XMLBBS"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\Web2.0ASP.NET2.0\Web2ASPNET2\XMLBBS\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\XMLBBS\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/XMLBBS"
+		Release.AspNetCompiler.PhysicalPath = "..\..\Web2.0ASP.NET2.0\Web2ASPNET2\XMLBBS\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\XMLBBS\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1816"
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "XMLBBSSetup", "..\Setup\XMLBBSSetup\XMLBBSSetup.vdproj", "{E66BE723-E92F-4866-AFEB-CDA242661E21}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Release|.NET = Release|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32D2E19E-40C3-4ABA-867A-60C3192A4940}.Debug|.NET.ActiveCfg = Debug|.NET
+		{32D2E19E-40C3-4ABA-867A-60C3192A4940}.Debug|.NET.Build.0 = Debug|.NET
+		{32D2E19E-40C3-4ABA-867A-60C3192A4940}.Release|.NET.ActiveCfg = Debug|.NET
+		{32D2E19E-40C3-4ABA-867A-60C3192A4940}.Release|.NET.Build.0 = Debug|.NET
+		{E66BE723-E92F-4866-AFEB-CDA242661E21}.Debug|.NET.ActiveCfg = Debug
+		{E66BE723-E92F-4866-AFEB-CDA242661E21}.Release|.NET.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
